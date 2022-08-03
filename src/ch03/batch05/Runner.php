@@ -1,0 +1,15 @@
+<?php
+
+namespace Ashin\ch03\batch05;
+include("../../../vendor/autoload.php");
+use Ashin\ch03\batch05\AddressManager;
+class Runner {
+ public static function run1()
+ {
+  $settings = simplexml_load_file(__DIR__ . "/resolve.xml");
+  $manager = new AddressManager();
+  $manager->outputAddress((string) $settings->resolve);
+ }
+}
+
+Runner::run1();

@@ -1,0 +1,19 @@
+{
+  "name": "ashin/oop",
+  "autoload": {
+    "psr-4": {
+      "Ashin\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "ashinindavudha"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "9.*",
+    "squizlabs/php_codesniffer": "2.*",
+    "facebook/webdriver": "*",
+    "phing/phing": "2.*"
+  }
+}
